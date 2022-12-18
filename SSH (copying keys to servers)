@@ -1,0 +1,7 @@
+# creating pub and private keys 
+ssh-keygen -t ed25519 -C "key name" 
+# copying keys to servers 
+ssh-copy-id ~/.ssh/keyname username@ipaddress
+# if there is error which saying "permissin denied" , go to the server make changes in /etc/ssh/sshd_config
+# Open the file /etc/ssh/sshd_config and make sure "PubkeyAuthentication yes" , "PasswordAuthentication yes"
+# Do not forget restart sshd on server " sudo systemctl restart sshd"
