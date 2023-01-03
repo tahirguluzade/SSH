@@ -11,4 +11,4 @@ ssh-copy-id ~/.ssh/keyname username@ipaddress
      root@Ipofserver's password:
      Permission denied, please try again.
      root@Ipofserver's password:
-# then you need to set "Permitrootlogin" to yes
+# then you need to set "Permitrootlogin" to yes in /etc/ssh/sshd_config file, do not forget to restart sshd server
