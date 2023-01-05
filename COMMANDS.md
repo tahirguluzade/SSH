@@ -1,1 +1,1 @@
-<kbd><font size= "2"><samp>last</kbd> , <kbd>lastlog</kbd></font></samp> - which shows history of who , when users logged in 
+<kbd><font size= "4">last</kbd></font> , <kbd>lastlog</kbd> - which shows history of who , when users logged in 
