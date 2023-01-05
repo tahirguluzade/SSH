@@ -3,7 +3,7 @@ ssh-keygen -t ed25519 -C "key name"
 # copying keys to servers 
 ssh-copy-id ~/.ssh/keyname username@ipaddress
 # if there is error which saying "permissin denied" , go to the server make changes in /etc/ssh/sshd_config
-# Open the file /etc/ssh/sshd_config and make sure "PubkeyAuthentication yes" , "PasswordAuthentication yes"
+# Open the file <kbd>/etc/ssh/sshd_config</kbd> and make sure "PubkeyAuthentication yes" , "PasswordAuthentication yes"
 # Do not forget restart sshd on server " sudo systemctl restart sshd"
 # If you want to copy your ssh key via root user from your local machine and you get following error while typing root password more times :
      root@Ipof server's password:
@@ -12,3 +12,4 @@ ssh-copy-id ~/.ssh/keyname username@ipaddress
      Permission denied, please try again.
      root@Ipofserver's password:
 # then you need to set "Permitrootlogin" to yes in /etc/ssh/sshd_config file, do not forget to restart sshd server
+
